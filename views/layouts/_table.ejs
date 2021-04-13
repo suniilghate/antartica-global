@@ -1,0 +1,19 @@
+<% for(var i = 0; i < users.length; i++) { %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= users[i].firstname %> <%= users[i].lastname %></td>
+        <td><%= users[i].email %></td>
+        <td><%= users[i].Employee.employeeId %></td>
+        <td><%= users[i].Employee.organization %></td>
+        <td>
+            <!--<a href="#" class="btn border-shadow update">
+                <span class="text-gradient">Edit</span>
+            </a>-->
+            <span class="text-gradient">Edit</span> | 
+            <span class="text-gradient">Delete</span>
+            <!--<a class="btn border-shadow delete" data-id=<%= users[i]._id%> >
+                <span class="text-gradient">Delete</span>
+            </a>-->
+        </td>
+    </tr>
+<% } %>
